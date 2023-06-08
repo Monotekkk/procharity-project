@@ -110,6 +110,11 @@ module.exports = {
             template: './src/settings-profile.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'sidebar-registration.html',
+            template: './src/sidebar-registration.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]
