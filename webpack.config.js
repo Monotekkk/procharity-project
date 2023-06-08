@@ -118,6 +118,16 @@ module.exports = {
             template: "./src/registration-contacts.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-nko-final.html',
+            template: './src/registration-nko-final.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-nko-hello.html',
+            template: './src/registration-nko-hello.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
