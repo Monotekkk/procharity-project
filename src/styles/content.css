@@ -430,3 +430,5 @@
 @import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
 @import url(../blocks/registration-nko-final/__link-assistant/registration-nko-final__link-assistant.css);
 @import url(../blocks/registration-nko-final/__link-donate/registration-nko-final__link-donate.css);
+
+@import url(../blocks/main/_template/main_template_registration-nko-hello.css);
