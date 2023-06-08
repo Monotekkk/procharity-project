@@ -518,5 +518,49 @@
                 </a>
             </div>
         </footer>
+        <div class="popup popup_type_window popup_opened">
+            <div class="popup__container">
+                <h2 class="heading heading_type_title popup__title">
+                    НКО с таким ИНН уже зарегистрирована
+                </h2>
+                <p class="paragraph popup__paragraph">
+                    Вы представитель НКО «Название»? Чтобы размещать задания
+                    от лица этой организации, вам необходимо получить доступ
+                    у администратора этого аккаунта. Для этого оставьте адрес
+                    своей электронной почты, и мы отправим его администратору.
+                </p>
+                <form
+                    name="doubleTIN"
+                    id="doubleTIN"
+                    action="#"
+                    method="POST"
+                    class="form"
+                >
+                    <div class="input">
+                        <input
+                            type="email"
+                            class="input__field"
+                            name="doubleTINemail"
+                            id="doubleTINemail"
+                            placeholder="Электронная почта"
+                            required
+                        />
+                        <label for="email" class="input__label"
+                            >Электронная почта</label
+                        >
+                        <button
+                            class="btn input__btn input__btn_type_clear-text"
+                        ></button>
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn_style_primary btn_confirm"
+                    >
+                        Запросить доступ
+                    </button>
+                </form>
+                <button class="btn btn_type_close popup__btn-close"></button>
+            </div>
+        </div>
     </body>
 </html>
