@@ -1,7 +1,10 @@
 .sidebar-nav__step_type_done{
     content: url('../../../../images/sidebar__status-step_done.svg');
     object-fit: scale-down;
-    background-repeat: no-repeat;
-    background-position: center center;
     background-color: #7DCDD7;
+}
+@media screen and (max-width: 900px) {
+    .sidebar-nav__step_type_done {
+        content: "";
+    }
 }
