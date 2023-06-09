@@ -119,19 +119,24 @@ module.exports = {
             inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-nko-final.html',
-            template: './src/registration-nko-final.html',
-            inject: 'body'
+            filename: "registration-nko-final.html",
+            template: "./src/registration-nko-final.html",
+            inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-nko-hello.html',
-            template: './src/registration-nko-hello.html',
-            inject: 'body'
+            filename: "registration-nko-hello.html",
+            template: "./src/registration-nko-hello.html",
+            inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: 'sidebar-registration.html',
-            template: './src/sidebar-registration.html',
-            inject: 'body'
+            filename: "account-access-empty.html",
+            template: "./src/account-access-empty.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "sidebar-registration.html",
+            template: "./src/sidebar-registration.html",
+            inject: "body",
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),

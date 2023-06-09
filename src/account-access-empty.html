@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="author" content="Группа 4" />
-        <title>ProCharity - Мое портфолио</title>
+        <meta name="author" content="Группа 2" />
+        <title>ProCharity - Сотрудники</title>
     </head>
     <body class="page">
         <header class="header">
             <div class="header__wrap">
-                <button class="menu-icon" type="menu"></button>
+                <button class="menu-icon" type="button"></button>
                 <a href="https://procharity.ru/">
                     <img
                         src="<%=require('./images/logo.svg')%>"
@@ -47,7 +47,13 @@
                     >
                         <span class="account-btn__text">Личный кабинет</span>
                     </div>
-                    <div class="account-btn__avatar"></div>
+                    <div class="account-btn__avatar">
+                        <img
+                            src="<%=require('./images/nko-avatar.svg')%>"
+                            class="account-btn__img"
+                            alt="Личный кабинет"
+                        />
+                    </div>
                 </a>
             </div>
         </header>
@@ -57,7 +63,7 @@
                     <li class="breadcrumbs__item">
                         <a href="#" class="breadcrumbs__link">Личный кабинет</a>
                     </li>
-                    <li class="breadcrumbs__item">Мои данные</li>
+                    <li class="breadcrumbs__item">Настройки</li>
                 </ul>
             </nav>
             <section class="sidebar-nav">
@@ -65,245 +71,61 @@
                     <li class="sidebar-nav__item">
                         <a href="#" class="sidebar-nav__link">
                             <div
-                                class="sidebar-nav__step sidebar-nav__step_style_lk"
+                                class="sidebar-nav__step sidebar-nav__step_registration"
                             >
                                 <span class="sidebar-nav__step-text">1</span>
                             </div>
                             <span class="sidebar-nav__item-text"
-                                >Личные данные</span
+                                >Пожертвования</span
                             >
                         </a>
                     </li>
                     <li class="sidebar-nav__item">
                         <a href="#" class="sidebar-nav__link">
                             <div
-                                class="sidebar-nav__step sidebar-nav__step_style_lk"
+                                class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_current"
                             >
                                 <span class="sidebar-nav__step-text">2</span>
                             </div>
                             <span class="sidebar-nav__item-text"
-                                >Компетенции</span
+                                >Сотрудники</span
                             >
                         </a>
                     </li>
                     <li class="sidebar-nav__item">
                         <a href="#" class="sidebar-nav__link">
                             <div
-                                class="sidebar-nav__step sidebar-nav__step_style_lk"
+                                class="sidebar-nav__step sidebar-nav__step_registration"
                             >
                                 <span class="sidebar-nav__step-text">3</span>
                             </div>
                             <span class="sidebar-nav__item-text"
-                                >Мотивация</span
-                            >
-                        </a>
-                    </li>
-                    <li
-                        class="sidebar-nav__item sidebar-nav__item_type_current"
-                    >
-                        <div
-                            class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current"
-                        >
-                            <span class="sidebar-nav__step-text">4</span>
-                        </div>
-                        <span class="sidebar-nav__item-text">Портфолио</span>
-                    </li>
-                    <li class="sidebar-nav__item">
-                        <a href="#" class="sidebar-nav__link">
-                            <div
-                                class="sidebar-nav__step sidebar-nav__step_style_lk"
-                            >
-                                <span class="sidebar-nav__step-text">5</span>
-                            </div>
-                            <span class="sidebar-nav__item-text"
-                                >Социальные сети</span
+                                >Смена пароля</span
                             >
                         </a>
                     </li>
                 </ul>
                 <div class="sidebar-nav__description">
-                    <p class="sidebar-nav__description-title">
-                        Профиль волонтера
-                    </p>
+                    <p class="sidebar-nav__description-title">Настройки</p>
                 </div>
             </section>
             <section class="sidebar">
                 <h2 class="sidebar__title">Статус профиля</h2>
-                <a href="#" class="sidebar__status">Cкрыт</a>
-            </section>
-            <section class="sidebar sidebar_type_profile-progress">
-                <h2 class="sidebar__title">Профиль заполнен на 66%</h2>
-                <div class="progress-bar">
-                    <div class="progress-bar__bg">
-                        <div class="progress-bar__scale"></div>
-                    </div>
-                    <button class="btn btn_type_refresh"></button>
-                </div>
-                <p class="sidebar__description">
-                    Узнай,
-                    <a class="sidebar__link" href="">как заполнить профиль,</a>
-                    чтобы тебя выбрали исполнителем
-                </p>
+                <a
+                    href="#"
+                    class="sidebar__status sidebar__status_state_process"
+                    >На модерации</a
+                >
             </section>
             <section class="content">
-                <h1 class="heading heading_type_title">Мое портфолио</h1>
-                <p class="paragraph">
-                    Наличие резюме или портфолио увеличит доверие к тебе как к
-                    профессионалу
+                <h1 class="heading heading_type_title">Сотрудники</h1>
+                <p class="paragraph paragraph_pb20">
+                    Приглашайте сотрудников, чтобы они могли размещать задания
+                    от имени вашей НКО
                 </p>
-                <form
-                    id="uploadProjects"
-                    name="uploadProjects"
-                    enctype="multipart/form-data"
-                    class="uploader"
-                    method="get"
-                >
-                    <fieldset
-                        class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col"
-                    >
-                        <legend class="heading heading_type_subtitle">
-                            Резюме или примеры работ
-                        </legend>
-                        <div class="uploader__input-container">
-                            <input
-                                accept=".jpg, .png, .tiff"
-                                class="uploader__input"
-                                type="file"
-                                name="projects"
-                                id="projects"
-                                multiple
-                            />
-                            <label for="projects" class="uploader__label">
-                                <span class="uploader__text-accent"
-                                    >Выбери файл</span
-                                ><span class="uploader__text">
-                                    или перетащи его сюда</span
-                                >
-                            </label>
-                        </div>
-                        <p class="note uploader__note">
-                            Jpg, png, pdf объемом не более 20 Мб
-                        </p>
-                    </fieldset>
-                    <fieldset
-                        class="fieldset fieldset_template_grid-one-col fieldset_style_pb-small"
-                    >
-                        <ul class="uploader__files-list">
-                            <li class="uploader__item">
-                                <div
-                                    class="uploader__file-preview-container uploader__file-preview-container_loading"
-                                ></div>
-                                <p class="uploader__file-title">CV.png</p>
-                                <span class="uploader__error-message"></span>
-                                <button
-                                    class="btn btn_type_delete uploader__btn-delete"
-                                ></button>
-                            </li>
-                            <li class="uploader__item uploader__item_error">
-                                <div
-                                    class="uploader__file-preview-container"
-                                ></div>
-                                <p class="uploader__file-title">CV.png</p>
-                                <span class="uploader__error-message"
-                                    >Размер файла не должен превышать 20
-                                    Мб</span
-                                >
-                                <button
-                                    class="btn btn_type_delete uploader__btn-delete"
-                                ></button>
-                            </li>
-                            <li class="uploader__item">
-                                <div class="uploader__file-preview-container">
-                                    <img
-                                        src="<%=require('./images/uploader-file-preview.png')%>"
-                                        alt="Предварительный просмотр"
-                                        class="uploader__file-preview"
-                                    />
-                                </div>
-                                <p class="uploader__file-title">
-                                    veryreallytoomuchlongveryreallytoomuchlongveryreallytoomuchlo...ngprojectname.pdf
-                                </p>
-                                <span class="uploader__error-message"></span>
-                                <button
-                                    class="btn btn_type_delete uploader__btn-delete"
-                                ></button>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-                <form
-                    id="uploadCertificates"
-                    name="uploadCertificates"
-                    enctype="multipart/form-data"
-                    class="uploader"
-                    method="get"
-                >
-                    <fieldset
-                        class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col"
-                    >
-                        <legend class="heading heading_type_subtitle">
-                            Дипломы и сертификаты
-                        </legend>
-                        <div class="uploader__input-container">
-                            <input
-                                accept=".jpg, .png, .tiff"
-                                class="uploader__input"
-                                type="file"
-                                name="projects"
-                                id="certificates"
-                                multiple
-                            />
-                            <label for="certificates" class="uploader__label">
-                                <span class="uploader__text-accent"
-                                    >Выбери файл</span
-                                ><span class="uploader__text">
-                                    или перетащи его сюда</span
-                                >
-                            </label>
-                        </div>
-                        <p class="note uploader__note">
-                            Jpg, png, pdf объемом не более 20 Мб
-                        </p>
-                    </fieldset>
-                </form>
-                <form
-                    name="projectLinksForm"
-                    id="projectLinksForm"
-                    action="lk-social.html"
-                    method="get"
-                >
-                    <fieldset
-                        class="fieldset fieldset_template_grid-project-links"
-                    >
-                        <legend class="heading heading_type_subtitle">
-                            Ссылки
-                        </legend>
-                        <div class="input-group">
-                            <div class="input input_type_bottom-interval">
-                                <input
-                                    class="input__field input__field_default"
-                                    type="text"
-                                    placeholder="Текст ссылки"
-                                />
-                            </div>
-                            <div class="input input_type_bottom-interval">
-                                <input
-                                    class="input__field input__field_default"
-                                    type="url"
-                                    placeholder="https://"
-                                />
-                                <button
-                                    class="btn input__btn input__btn_type_clear-text"
-                                ></button>
-                            </div>
-                            btn_style_primary
-                        </div>
-                        <button type="button" class="btn btn_type_add">
-                            Добавить ссылку
-                        </button>
-                    </fieldset>
-                    <button type="submit" class="btn">Сохранить</button>
-                </form>
+                <button type="button" class="btn btn_style_primary">
+                    Добавить
+                </button>
             </section>
         </main>
         <footer class="footer">
