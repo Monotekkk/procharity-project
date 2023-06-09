@@ -420,3 +420,13 @@
 
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
+
+
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-pb-small.css);
+@import url(../blocks/btn/_style/btn_style_mt-small.css);
+
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-big.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-small.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_p.css);

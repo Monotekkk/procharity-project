@@ -62,49 +62,47 @@
 
   <section class="sidebar-nav">
     <ul class="sidebar-nav__list">
-      <li class="sidebar-nav__item sidebar-nav__item_type_current">
-        <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-          <span class="sidebar-nav__step-text">1</span>
-        </div>
-        <span class="sidebar-nav__item-text">Личные данные</span>
-      </li>
-      <li class="sidebar-nav__item">
-        <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-            <span class="sidebar-nav__step-text">2</span>
-          </div>
-          <span class="sidebar-nav__item-text">Компетенции</span>
-        </a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-            <span class="sidebar-nav__step-text">3</span>
-          </div>
-          <span class="sidebar-nav__item-text">Мотивация</span>
-        </a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-            <span class="sidebar-nav__step-text">4</span>
-          </div>
-          <span class="sidebar-nav__item-text">Портфолио</span>
-        </a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a href="#" class="sidebar-nav__link">
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk">
-            <span class="sidebar-nav__step-text">5</span>
-          </div>
-          <span class="sidebar-nav__item-text">Социальные сети</span>
-        </a>
-      </li>
+        <li class="sidebar-nav__item">
+            <a href="#" class="sidebar-nav__link">
+                <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_done">
+                    <span class="sidebar-nav__step-text">1</span>
+                </div>
+                <span class="sidebar-nav__item-text">Контактное лицо</span>
+            </a>
+        </li>
+        <li class="sidebar-nav__item ">
+            <a href="#" class="sidebar-nav__link">
+                <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_current">
+                    <span class="sidebar-nav__step-text">2</span>
+                </div>
+                <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Реквизиты</span>
+            </a>
+        </li>
+        <li class="sidebar-nav__item">
+            <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
+                <span class="sidebar-nav__step-text">3</span>
+              </div>
+            <span class="sidebar-nav__item-text sidebar-nav__step_type_missed">Документы и файлы</span> 
+        </li>
+        <li class="sidebar-nav__item">
+            <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
+                <span class="sidebar-nav__step-text">4</span>
+            </div>
+            <span class="sidebar-nav__item-text sidebar-nav__step_type_missed">Описание</span>
+        </li>
+        <li class="sidebar-nav__item">
+            <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
+                <span class="sidebar-nav__step-text">5</span>
+            </div>
+            <span class="sidebar-nav__item-text sidebar-nav__step_type_missed">Ссылки</span>
+        </li>
     </ul>
     <div class="sidebar-nav__description">
-      <p class="sidebar-nav__description-title">Профиль волонтера</p>
+        <p class="sidebar-nav__description-title">Регистрация НКО</p>
+        <p class="sidebar-nav__description-title">Шаг 2 из 5</p>
     </div>
-  </section>
+</section>
+
 
   <section class="sidebar">
     <h2 class="sidebar__title">Статус профиля</h2>
@@ -115,9 +113,9 @@
   <section class="content">
     <h1 class="heading heading heading_type_title">Реквизиты</h1>
 
-    <form name="personalData" id="personalData" action="lk-competencies.html" method="get" novalidate>
+    <form name="nkoRegistrAccount" id="nkoRegistrAccount" method="get" novalidate>
 
-      <fieldset class="fieldset fieldset_template_grid-form" id="userDate">
+      <fieldset class="fieldset fieldset_template_grid-form fieldset_template_grid-pb-small"  id="nkoAccount">
         
         <div class="input">
           <input type="text" class="input__field" name="inn" id="inn" placeholder="ИНН" required>
@@ -143,9 +141,9 @@
      
       </fieldset>
       
-      <fieldset class="fieldset fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_style_pb-small">
         <div class="textarea">
-          <textarea class="textarea__field textarea__field_autosize " name="full-name" id="fullName" maxlength="2000"
+          <textarea class="textarea__field textarea__field_autosize textarea__field_style_p textarea__field_style_h-small" name="full-name" id="fullName" maxlength="2000"
                     placeholder="Полное название"></textarea>
           <label class="textarea__label" for="fullName">Полное название</label>
        
@@ -153,9 +151,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="fieldset fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_template_grid-one-col fieldset_style_p-none">
         <div class="textarea">
-          <textarea class="textarea__field textarea__field_autosize " name="legal-address" id="legalAddress" maxlength="2000"
+          <textarea class="textarea__field textarea__field_autosize textarea__field_style_p textarea__field_style_h-big" name="legal-address" id="legalAddress" maxlength="2000"
                     placeholder="Юридический адрес"></textarea>
           <label class="textarea__label" for="legalAddress">Юридический адрес</label>
         
@@ -163,7 +161,7 @@
         </div>
       </fieldset>
 
-      <button type="submit" class="btn btn_style_primary">Сохранить</button>
+      <button type="submit" class="btn btn_style_primary btn_style_mt-small">Сохранить</button>
 
     </form>
   </section>
