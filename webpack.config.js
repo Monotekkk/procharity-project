@@ -115,6 +115,11 @@ module.exports = {
             template: './src/sidebar-registration.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'lk-nko-account.html',
+            template: './src/lk-nko-account.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]

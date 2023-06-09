@@ -1,0 +1,5 @@
+@media screen and (max-width: 900px) {
+  .fieldset_template_grid-pb-mobile { 
+    padding-bottom: 16px;
+  }
+}
