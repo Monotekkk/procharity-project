@@ -69,6 +69,9 @@
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
 @import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_lk.css);
+@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_registration.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
 
 
@@ -420,3 +423,13 @@
 
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
+
+
+/*----------------------------------------------------------------------*/
+/* регистрация НКО - страница финал */
+@import url(../blocks/paragraph/_style/paragraph_style_final.css);
+@import url(../blocks/heading/_type/heading_type_title-nko.css);
+@import url(../blocks/registration-nko-final/registration-nko-final.css);
+@import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
+
+@import url(../blocks/main/_template/main_template_registration-nko-hello.css);
