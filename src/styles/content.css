@@ -182,6 +182,9 @@
 
 @import url(../blocks/hint/__tooltip/hint__tooltip.css);
 @import url(../blocks/hint/__tooltip/_position/hint__tooltip_position_right-bottom.css);
+@import url(../blocks/hint/__tooltip/_position/hint__tooltip_position_center-bottom.css);
+@import url(../blocks/hint/__list/hint__list.css);
+@import url(../blocks/hint/__list-item/hint__list-item.css);
 
 /* fieldset */
 

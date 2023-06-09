@@ -9,6 +9,10 @@
     margin-bottom: 20px;
 }
 
+#newWorker .input {
+    margin-bottom: 20px;
+}
+
 .input-group .input {
     border-radius: 0;
 }
