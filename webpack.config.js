@@ -101,6 +101,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'settings-change-password_23_cohort.html',
+            template: './src/settings-change-password_23_cohort.html',
+            inject: 'body'
+        }),   
+        new HtmlWebpackPlugin({
             filename: 'settings-notifications.html',
             template: './src/settings-notifications.html',
             inject: 'body'
