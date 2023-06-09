@@ -345,5 +345,106 @@
                 </a>
             </div>
         </footer>
+        <div class="popup popup_type_window popup_opened">
+            <div class="popup__container">
+                <h2 class="heading heading_type_title popup__title non-margin">
+                    Новый сотрудник
+                </h2>
+                <form
+                    name="newWorker"
+                    id="newWorker"
+                    action="#"
+                    method="POST"
+                    class="form"
+                >
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox__input"
+                            name="notification-1"
+                            id="notification-1"
+                        />
+                        <label
+                            for="notification-1"
+                            class="checkbox__label checkbox__label_style_notifications"
+                            >Права администратора
+                            <button
+                                type="button"
+                                class="hint input__btn input__btn_type_hint"
+                            >
+                                <div
+                                    class="hint__tooltip hint__tooltip_position_center-bottom"
+                                >
+                                    Новый сотрудник Права администратора Имя
+                                    Сотрудник с правами администратора может:
+                                    <ul class="hint__list">
+                                        <li>
+                                            добавлять коллег в личный кабинет
+                                            НКО и удалять их оттуда,
+                                        </li>
+                                        <li>
+                                            редактировать профиль организации.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <input
+                            type="text"
+                            class="input__field"
+                            name="name"
+                            id="name"
+                            placeholder="Имя"
+                            required
+                        />
+                        <label for="name" class="input__label">Имя</label>
+                        <button
+                            class="btn input__btn input__btn_type_clear-text"
+                        ></button>
+                    </div>
+                    <div class="input">
+                        <input
+                            type="text"
+                            class="input__field"
+                            name="surname"
+                            id="surname"
+                            placeholder="Фамилия"
+                            required
+                        />
+                        <label for="surname" class="input__label"
+                            >Фамилия</label
+                        >
+                        <button
+                            class="btn input__btn input__btn_type_clear-text"
+                        ></button>
+                    </div>
+                    <div class="input">
+                        <input
+                            type="email"
+                            class="input__field"
+                            name="email"
+                            id="email"
+                            placeholder="Электронная почта"
+                            required
+                        />
+                        <label for="email" class="input__label"
+                            >Электронная почта</label
+                        >
+                        <button
+                            class="btn input__btn input__btn_type_clear-text"
+                        ></button>
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn_style_primary btn_confirm"
+                    >
+                        Добавить
+                    </button>
+                </form>
+                <button class="btn btn_type_close popup__btn-close"></button>
+            </div>
+        </div>
     </body>
 </html>
