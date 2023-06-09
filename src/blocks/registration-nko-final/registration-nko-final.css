@@ -1,0 +1,18 @@
+.registration-nko-final {
+  margin: auto;
+  display: flex;
+  flex-direction: column;  
+  max-width: 736px;  
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 900px) {
+  .registration-nko-final {
+    margin-top: 38px;
+    margin-bottom: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
