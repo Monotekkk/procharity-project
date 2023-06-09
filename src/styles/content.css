@@ -421,3 +421,13 @@
 
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
+
+
+/*----------------------------------------------------------------------*/
+/* регистрация НКО - страница финал */
+@import url(../blocks/paragraph/_style/paragraph_style_final.css);
+@import url(../blocks/heading/_type/heading_type_title-nko.css);
+@import url(../blocks/registration-nko-final/registration-nko-final.css);
+@import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
+
+@import url(../blocks/main/_template/main_template_registration-nko-hello.css);
