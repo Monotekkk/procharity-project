@@ -139,8 +139,8 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-links.html',
-            template: './src/registration-links.html',
+            filename: 'lk-nko-document-and-file.html',
+            template: './src/lk-nko-document-and-file.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
