@@ -111,6 +111,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'sidebar-registration.html',
+            template: './src/sidebar-registration.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'account-links.html',
             template: './src/account-links.html',
             inject: 'body'
