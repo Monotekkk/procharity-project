@@ -133,6 +133,11 @@ module.exports = {
             template: './src/sidebar-registration.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'account-links.html',
+            template: './src/account-links.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
