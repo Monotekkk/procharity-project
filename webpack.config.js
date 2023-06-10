@@ -139,6 +139,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'lk-nko-account.html',
+            template: './src/lk-nko-account.html',
+             inject: 'body'
+        }),
+         new HtmlWebpackPlugin({
             filename: 'lk-nko-document-and-file.html',
             template: './src/lk-nko-document-and-file.html',
             inject: 'body'
