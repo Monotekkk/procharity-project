@@ -129,8 +129,8 @@ module.exports = {
             inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: "account-access-empty.html",
-            template: "./src/account-access-empty.html",
+            filename: "account-access-inviting.html",
+            template: "./src/account-access-inviting.html",
             inject: "body",
         }),
         new HtmlWebpackPlugin({

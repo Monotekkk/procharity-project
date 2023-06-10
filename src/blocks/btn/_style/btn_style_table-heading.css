@@ -1,0 +1,11 @@
+.btn_style_table-heading {
+    color: #7b878f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.btn_style_table-heading.active {
+    color: #58646a;
+}

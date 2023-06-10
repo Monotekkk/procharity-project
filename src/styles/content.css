@@ -114,6 +114,7 @@
 @import url(../blocks/btn/_style/btn_style_secondary.css);
 @import url(../blocks/btn/_style/btn_style_inactive.css);
 @import url(../blocks/btn/_style/btn_style_telegram.css);
+@import url(../blocks/btn/_style/btn_style_table-heading.css);
 
 @import url(../blocks/btn/_type/btn_type_close.css);
 @import url(../blocks/btn/_type/btn_type_refresh.css);
@@ -380,3 +381,15 @@
 @import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
 
 @import url(../blocks/main/_template/main_template_registration-nko-hello.css);
+
+/* Список приглашенных сотрудников */
+@import url(../blocks/inviting-workers/inviting-workers.css);
+@import url(../blocks/inviting-workers/__list/iviting-workers__list.css);
+@import url(../blocks/inviting-workers/__item/inviting-workers__item.css);
+@import url(../blocks/inviting-workers/__item-text/inviting-workers__item-text.css);
+@import url(../blocks/inviting-workers/__column/inviting-workers__column.css);
+@import url(../blocks/inviting-workers/__column/_w20/inviting-workers__column_w20.css);
+@import url(../blocks/inviting-workers/__btn-down-icon/inviting-workers__btn-down-icon.css);
+@import url(../blocks/inviting-workers/__context-menu-list-icon/inviting-workers__context-menu-list-icon.css);
+@import url(../blocks/inviting-workers/__list-edit-icon/inviting-workers__list-edit-icon.css);
+@import url(../blocks/inviting-workers/__rights-icon/inviting-workers__rights-icon.css);
