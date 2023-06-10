@@ -1,0 +1,18 @@
+.inviting-workers__pagination-btn {
+    height: 24px;
+    width: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+
+    color: #58646a;
+}
+
+.inviting-workers__pagination-btn.active {
+    background: #72d0dc;
+    border-radius: 4px;
+    color: #ffffff;
+}
