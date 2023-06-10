@@ -148,6 +148,11 @@ module.exports = {
             template: './src/lk-nko-document-and-file.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-nko-account.html',
+            template: './src/registration-nko-account.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
