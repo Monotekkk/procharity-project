@@ -56,10 +56,9 @@
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
 @import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_lk.css);
-@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_registration.css);
-@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
-@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
+
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_half.css);
 
 @import url(../blocks/sidebar-nav/__step-text/sidebar-nav__step-text.css);
 
@@ -195,13 +194,14 @@
 @import url(../blocks/fieldset/__row-group/fieldset__row-group.css);
 @import url(../blocks/fieldset/__row-group/_type/fieldset__row-group_type_block.css);
 
-@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
-@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
-
 @import url(../blocks/fieldset/_template/fieldset_template_grid-form.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
+
+
+@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
+@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
 
 /* textarea */
 
@@ -374,6 +374,18 @@
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
 
+
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-pb-small.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-pb-mobile.css);
+@import url(../blocks/btn/_style/btn_style_mt-small.css);
+
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-big.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-small.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_p.css);
+@import url(../blocks/btn/_style/btn_style_primary-p.css);
+
 /*----------------------------------------------------------------------*/
 /* регистрация НКО - страница финал */
 @import url(../blocks/paragraph/_style/paragraph_style_final.css);
@@ -382,6 +394,7 @@
 @import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
 
 @import url(../blocks/main/_template/main_template_registration-nko-hello.css);
+
 
 /* Список приглашенных сотрудников */
 @import url(../blocks/inviting-workers/inviting-workers.css);
@@ -401,3 +414,4 @@
 @import url(../blocks/inviting-workers/__pagination-item/inviting-workers__pagination-item.css);
 @import url(../blocks/inviting-workers/__pagination-btn/inviting-workers__pagination-btn.css);
 @import url(../blocks/inviting-workers/__pagination-btn-icon/inviting-workers__pagination-btn-icon.css);
+
