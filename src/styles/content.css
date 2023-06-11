@@ -393,6 +393,7 @@
 @import url(../blocks/inviting-workers/__context-menu-list-icon/inviting-workers__context-menu-list-icon.css);
 @import url(../blocks/inviting-workers/__list-edit-icon/inviting-workers__list-edit-icon.css);
 @import url(../blocks/inviting-workers/__rights-icon/inviting-workers__rights-icon.css);
+@import url(../blocks/inviting-workers/__sort/inviting-workers__sort.css);
 /* Pagination */
 @import url(../blocks/inviting-workers/__pagination/inviting-workers__pagination.css);
 @import url(../blocks/inviting-workers/__pagination-list/inviting-workers__pagination-list.css);

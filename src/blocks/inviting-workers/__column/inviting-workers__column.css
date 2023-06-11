@@ -9,3 +9,11 @@
 .inviting-workers__column:first-child {
     padding-left: 0;
 }
+@media screen and (max-width: 900px) {
+    .inviting-workers__column {
+        width: 100%;
+    }
+    .inviting-workers__column:last-child {
+        display: none;
+    }
+}

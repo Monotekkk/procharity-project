@@ -127,7 +127,27 @@
                     Добавить
                 </button>
                 <section class="inviting-workers">
-                    <div class="inviting-workers__item">
+                    <div class="input inviting-workers__sort">
+                        <select
+                            name="workersListSort"
+                            id="workersListSort"
+                            class="custom-select"
+                        >
+                            <option value="name" selected>
+                                Сортировать: по имени и фамилии
+                            </option>
+                            <option value="name">
+                                Сортировать: по имени и фамилии
+                            </option>
+                            <option value="rights">
+                                Сортировать: по правам
+                            </option>
+                            <option value="date">
+                                Сортировать: по дате регистрации
+                            </option>
+                        </select>
+                    </div>
+                    <div class="inviting-workers__item inviting-workers__sort">
                         <div class="inviting-workers__column">
                             <button
                                 type="button"
@@ -369,6 +389,12 @@
                             />
                         </button>
                     </div>
+                    <button
+                        type="submit"
+                        class="btn btn_style_secondary inviting-workers__pagination"
+                    >
+                        Показать еще 5
+                    </button>
                 </section>
             </section>
         </main>
