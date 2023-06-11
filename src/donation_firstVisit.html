@@ -96,11 +96,6 @@
         <form name="donations" id="donations" action="#" method="POST" novalidate="">
             <fieldset class="fieldset">
                 <p class="paragraph">Ссылка на страницу для пожертвований</p>
-<!--                <div class="input input_type_bottom-interval">-->
-<!--                    <input class="input__field input__field_default" type="url" placeholder="https://" name="url" id="url">-->
-<!--                    <label class="input__label" for="url"></label>-->
-<!--                    <button type="button" class="btn input__btn input__btn_type_clear-text input__btn"></button>-->
-<!--                </div>-->
                 <div class="input">
                     <input type="url" placeholder="https://" class="input__field input__field_default">
                     <button class="btn input__btn input__btn_type_clear-text"></button>
@@ -127,6 +122,13 @@
             </fieldset>
             <button type="submit" class="btn btn_style_primary">Сохранить</button>
         </form>
+        <div class="notification">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="11" stroke="#72D0DC" stroke-width="2"/>
+                <path d="M12 16.4074L14.7317 19L20 14" stroke="#72D0DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p style="padding: 0" class="paragraph">Ссылка прошла модерацию и опубликована на странице Пожертвования</p>
+        </div>
     </section>
 </main>
 <footer class="footer">
@@ -297,5 +299,13 @@
         </a>
     </div>
 </footer>
+<div class="popup popup_type_message popup_opened">
+    <div class="popup__container">
+        <h2 class="popup__title">Проверяем ссылку</h2>
+        <p class="popup__text">Обычно это занимает до 2 рабочих дней. Как только проверим, опубликуем ссылку на странице
+            «Пожертвования».</p>
+        <button class="btn btn_type_close popup__btn-close"></button>
+    </div>
+</div>
 </body>
 </html>
