@@ -116,8 +116,8 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'donation.html',
-            template: './src/donation.html',
+            filename: 'donation_firstVisit.html',
+            template: './src/donation_firstVisit.html',
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
