@@ -5,11 +5,9 @@
     width: 100%;
 }
 
+#newWorker .input,
+#editWorker .input,
 #doubleTIN .input {
-    margin-bottom: 20px;
-}
-
-#newWorker .input {
     margin-bottom: 20px;
 }
 
