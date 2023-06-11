@@ -2,3 +2,10 @@
   background-color: #E6560A;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__step_type_current {
+    background: linear-gradient(to right, #E6560A 50%, #F1F5F9 50%);
+    color: #FFFFFF;
+  }
+}
