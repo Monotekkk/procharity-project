@@ -1,0 +1,12 @@
+.input.inviting-workers__sort {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .inviting-workers__sort {
+        display: none;
+    }
+    .input.inviting-workers__sort {
+        display: block;
+    }
+}
