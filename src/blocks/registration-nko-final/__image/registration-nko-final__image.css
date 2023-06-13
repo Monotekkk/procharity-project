@@ -1,0 +1,24 @@
+.registration-nko-final__image {  
+   width: 256px;
+   display: flex;
+   background-image: url(../../../images/illustration-finish.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   min-height: 176px;
+   min-width: 200px;
+   padding-bottom: 42px;
+   aspect-ratio: 256/228;
+ }
+ 
+ @media screen and (max-width: 900px) {
+   .registration-nko-final__image {   
+     padding-bottom: 27px;    
+   }
+ }
+ 
+ @media screen and (max-width: 416px) {
+   .registration-nko-final__image {   
+     width: calc(100vw - 160px);    
+   }
+ }
