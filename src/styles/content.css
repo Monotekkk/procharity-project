@@ -416,7 +416,7 @@
 @import url(../blocks/uploader/__text-accent/uploader__text-accent.css);
 
 @import url(../blocks/uploader/__note/uploader__note.css);
-
+@import url(../blocks/notification/notification.css);
 
 
 /* CropperJS */

@@ -143,6 +143,11 @@ module.exports = {
             template: './src/lk-nko-document-and-file.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'donate.html',
+            template: './src/donate.html',
+            inject: 'body'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
