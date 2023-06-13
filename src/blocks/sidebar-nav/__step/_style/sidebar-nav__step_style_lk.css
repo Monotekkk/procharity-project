@@ -1,8 +1,4 @@
 .sidebar-nav__step_style_lk {
-  content: "";
+  color: #fff;
   background: #72D0DC;
-  background-image: url('../../../../images/donegalka.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  color: transparent
 }
