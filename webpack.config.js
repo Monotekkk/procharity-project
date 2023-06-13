@@ -119,13 +119,23 @@ module.exports = {
             inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-nko-final.html',
-            template: './src/registration-nko-final.html',
-            inject: 'body'
+            filename: "registration-nko-final.html",
+            template: "./src/registration-nko-final.html",
+            inject: "body",
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-nko-hello.html',
-            template: './src/registration-nko-hello.html',
+            filename: "registration-nko-hello.html",
+            template: "./src/registration-nko-hello.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "account-access-inviting.html",
+            template: "./src/account-access-inviting.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-documents-and-files.html',
+            template: './src/registration-documents-and-files.html',
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
@@ -139,13 +149,27 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'donation_firstVisit.html',
+            template: './src/donation_firstVisit.html',
+        }),
+      new HtmlWebpackPlugin({
+            filename: 'lk-nko-account.html',
+            template: './src/lk-nko-account.html',
+             inject: 'body'
+        }),
+         new HtmlWebpackPlugin({
             filename: 'lk-nko-document-and-file.html',
             template: './src/lk-nko-document-and-file.html',
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+<<<<<<< HEAD
             filename: 'donate.html',
             template: './src/donate.html',
+=======
+            filename: 'registration-nko-account.html',
+            template: './src/registration-nko-account.html',
+>>>>>>> b9f162d26ba77a4297ad1df753bb4b560f16dd2b
             inject: 'body'
         }),
         new CleanWebpackPlugin(),

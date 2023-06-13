@@ -1,0 +1,6 @@
+.popup_type_message .popup__title_type_error:before {
+    content: url(../../../../images/image__popup__title_type_error.svg);
+    left: 0;
+    position: absolute;
+    top: 0;
+}

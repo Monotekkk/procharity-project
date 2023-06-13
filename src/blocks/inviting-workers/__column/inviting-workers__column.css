@@ -1,0 +1,19 @@
+.inviting-workers__column {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+.inviting-workers__column:first-child {
+    padding-left: 0;
+}
+@media screen and (max-width: 900px) {
+    .inviting-workers__column {
+        width: 100%;
+    }
+    .inviting-workers__column:last-child {
+        display: none;
+    }
+}
