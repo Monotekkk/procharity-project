@@ -1,0 +1,10 @@
+.notification{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    border: 1px solid #A0ABB5;
+    border-radius: 8px;
+    margin-top: 20px;
+}

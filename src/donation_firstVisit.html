@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Группа 4">
-    <title>Сайдбар</title>
+    <title>ProCharity - Мое портфолио</title>
 </head>
 <body class="page">
 <header class="header">
     <div class="header__wrap">
-        <button class="menu-icon" type="button"></button>
+        <button class="menu-icon" type="menu"></button>
         <a href="https://procharity.ru/">
             <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
         </a>
@@ -41,9 +41,7 @@
             <div class="account-btn__content account-btn__content_type_lk">
                 <span class="account-btn__text">Личный кабинет</span>
             </div>
-            <div class="account-btn__avatar">
-                <img src="<%=require('./images/btn-avatar.svg')%>" class="account-btn__img" alt="Личный кабинет">
-            </div>
+            <div class="account-btn__avatar"></div>
         </a>
     </div>
 </header>
@@ -51,10 +49,10 @@
     <nav class="breadcrumbs">
         <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link">Регистрация</a>
+                <a href="#" class="breadcrumbs__link">Личный кабинет</a>
             </li>
             <li class="breadcrumbs__item">
-                НКО
+                Настройки
             </li>
         </ul>
     </nav>
@@ -62,53 +60,75 @@
         <ul class="sidebar-nav__list">
             <li class="sidebar-nav__item">
                 <a href="#" class="sidebar-nav__link">
-                    <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_done">
+                    <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
                         <span class="sidebar-nav__step-text">1</span>
                     </div>
-                    <span class="sidebar-nav__item-text">Контактное лицо</span>
+                    <span class="sidebar-nav__item-text">Пожертвования</span>
                 </a>
             </li>
-            <li class="sidebar-nav__item ">
+            <li class="sidebar-nav__item">
                 <a href="#" class="sidebar-nav__link">
-                    <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_current">
+                    <div class="sidebar-nav__step sidebar-nav__step_style_lk">
                         <span class="sidebar-nav__step-text">2</span>
                     </div>
-                    <span class="sidebar-nav__item-text">Реквизиты</span>
+                    <span class="sidebar-nav__item-text">Сотрудники</span>
                 </a>
             </li>
             <li class="sidebar-nav__item">
-                <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
-                    <span class="sidebar-nav__step-text">3</span>
-                </div>
-                <span class="sidebar-nav__item-text">Документы и файлы</span>
-            </li>
-            <li class="sidebar-nav__item">
-                <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
-                    <span class="sidebar-nav__step-text">4</span>
-                </div>
-                <span class="sidebar-nav__item-text">Описание</span>
-            </li>
-            <li class="sidebar-nav__item">
-                <div class="sidebar-nav__step sidebar-nav__step_registration sidebar-nav__step_type_missed">
-                    <span class="sidebar-nav__step-text">5</span>
-                </div>
-                <span class="sidebar-nav__item-text">Ссылки</span>
+                <a href="#" class="sidebar-nav__link">
+                    <div class="sidebar-nav__step sidebar-nav__step_style_lk">
+                        <span class="sidebar-nav__step-text">3</span>
+                    </div>
+                    <span class="sidebar-nav__item-text">Смена пароля</span>
+                </a>
             </li>
         </ul>
         <div class="sidebar-nav__description">
-            <p class="sidebar-nav__description-title">
-                Регистрация
-                НКО</p>
+            <p class="sidebar-nav__description-title">Профиль волонтера</p>
         </div>
     </section>
     <section class="sidebar">
         <h2 class="sidebar__title">Статус профиля</h2>
-        <a href="#" class="sidebar__status sidebar__status_state_confirm">Подтвержден</a>
+        <a href="#" class="sidebar__status sidebar__status_state_process">На модерации</a>
     </section>
     <section class="content">
-        Для активного шага используем класс: .sidebar-nav__step_type_current <br>
-        Для пройденного шага используем: .sidebar-nav__step_type_done<br>
-        Для НЕ пройденного шага используем: .sidebar-nav__step_type_missed
+        <h1 class="heading heading_type_title">Пожертвования</h1>
+        <form name="donations" id="donations" action="#" method="POST" novalidate="">
+            <fieldset class="fieldset">
+                <p class="paragraph">Ссылка на страницу для пожертвований</p>
+                <div class="input">
+                    <input type="url" placeholder="https://" class="input__field input__field_default">
+                    <button class="btn input__btn input__btn_type_clear-text"></button>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <div class="textarea">
+                    <textarea class="textarea__field textarea__field_autosize" name="the-collected-funds-be-used-for"
+                              id="the-collected-funds-be-used-for"
+                              maxlength="2000" placeholder="На что пойдут собранные средства" required=""
+                              style="height: 68px;"></textarea>
+                    <label class="textarea__label" for="the-collected-funds-be-used-for">На что пойдут собранные
+                        средства</label>
+                    <button type="button" class="hint input__btn input__btn_type_hint">
+                        <div class="hint__tooltip">
+                            Например, «Закупим оборудование&nbsp;для медицинского кабинета»
+                        </div>
+                    </button>
+                    <div class="textarea__counter">
+                        <span class="textarea__count-symbols">142</span>/<span
+                            class="textarea__total-symbols">2000</span>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn_style_primary">Сохранить</button>
+        </form>
+        <div class="notification">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="11" stroke="#72D0DC" stroke-width="2"/>
+                <path d="M12 16.4074L14.7317 19L20 14" stroke="#72D0DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p style="padding: 0" class="paragraph">Ссылка прошла модерацию и опубликована на странице Пожертвования</p>
+        </div>
     </section>
 </main>
 <footer class="footer">
@@ -234,7 +254,8 @@
             <li class="footer__firms-item">
                 <p class="footer__logo-text">Создатель проекта</p>
                 <a href="#" class="footer__firms-link">
-                    <img src="<%=require('./images/logo_fund_frainds.svg')%>" alt="Фонд Друзья" class="footer__logo-img">
+                    <img src="<%=require('./images/logo_fund_frainds.svg')%>" alt="Фонд Друзья"
+                         class="footer__logo-img">
                 </a>
             </li>
             <li class="footer__firms-item">
@@ -278,5 +299,13 @@
         </a>
     </div>
 </footer>
+<div class="popup popup_type_message popup_opened">
+    <div class="popup__container">
+        <h2 class="popup__title">Проверяем ссылку</h2>
+        <p class="popup__text">Обычно это занимает до 2 рабочих дней. Как только проверим, опубликуем ссылку на странице
+            «Пожертвования».</p>
+        <button class="btn btn_type_close popup__btn-close"></button>
+    </div>
+</div>
 </body>
 </html>

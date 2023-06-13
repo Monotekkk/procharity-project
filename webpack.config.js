@@ -144,6 +144,10 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'donation_firstVisit.html',
+            template: './src/donation_firstVisit.html',
+        }),
+      new HtmlWebpackPlugin({
             filename: 'lk-nko-account.html',
             template: './src/lk-nko-account.html',
              inject: 'body'

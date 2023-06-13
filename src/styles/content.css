@@ -415,8 +415,8 @@
 
 @import url(../blocks/uploader/__note/uploader__note.css);
 
-
-
+/* Плашка уведомления*/
+@import url(../blocks/notification/notification.css);
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
 
