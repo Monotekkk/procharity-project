@@ -163,13 +163,13 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-<<<<<<< HEAD
             filename: 'donate.html',
             template: './src/donate.html',
-=======
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration-nko-account.html',
             template: './src/registration-nko-account.html',
->>>>>>> b9f162d26ba77a4297ad1df753bb4b560f16dd2b
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
