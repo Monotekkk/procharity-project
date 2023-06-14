@@ -57,7 +57,7 @@ export default class CustomMultiselect {
       resetAllGroupLinkClass: 'custom-select__link_type_reset',
       selectBtnClass: ['btn', 'btn_style_primary', 'custom-select__btn', 'custom-select__btn_type_select'],
       resetBtnClass: ['btn', 'btn_style_secondary', 'custom-select__btn', 'custom-select__btn_type_reset'],
-      optionsListClass: ['custom-select__list', 'custom-select__list_type_multiselect'],
+      optionsListClass: ['custom-select__list', 'custom-select__list_type_multiselect', 'custom-select__list_activity'],
       optionClass: 'custom-select__item',
       optionParentClass: 'custom-select__item_style_parent',
       optionParentOpenedClass: 'custom-select__item_style_parent-opened',
@@ -65,7 +65,7 @@ export default class CustomMultiselect {
       optionSelectedClass: 'custom-select__item_selected-checkbox',
       mobileScreenBreakpoint: 900,
       firstOptionIsTitle: false,
-      useTextSearch: true
+      useTextSearch: false
   }) {
     this._selectElement = document.querySelector(selector);
     this._options = options;
@@ -96,18 +96,6 @@ export default class CustomMultiselect {
     return element;
   }
 
-
-  _createHeading() {
-    const element = document.createElement('h2');
-    element.textContent = "Выбор компетенции";
-    element.classList.add(
-      ...this._handleClassList(this._options.headingClass)
-    );
-
-    return element;
-  }
-
-
   _createCloseBtn() {
     const element = document.createElement('button');
     element.classList.add(
@@ -135,11 +123,11 @@ export default class CustomMultiselect {
     element.classList.add(
       ...this._handleClassList(this._options.labelClass)
     );
-
-    element.textContent = 'Выбрать';
-
+    
+    element.textContent = ("Виды деятельности:" + " 0 из 13");
+    
     return element;
-  }  
+  }
 
 
   _createListContainer() {
@@ -236,80 +224,12 @@ export default class CustomMultiselect {
 
     return element;
   }
-
-
-  _createChipsContainer() {
-    const element = document.createElement('div');
-    element.classList.add(
-      ...this._handleClassList(this._options.chipsClass)
-    );
-
-    return element;
-  }
-
-
-  _createChipsText() {
-    const element = document.createElement('span');
-    element.classList.add(
-      ...this._handleClassList(this._options.chipsTextClass)
-    );
-
-    return element;
-  }
-
-
-  _createChipsDeleteBtn() {
-    const element = document.createElement('button');
-    element.classList.add(
-      ...this._handleClassList(this._options.chipsDeleteBtnClass)
-    );
-
-    return element;
-  }
-
-
-  _createChips(item) {
-    const chips = this._createChipsContainer();
-    const chipsText = this._createChipsText();
-    const chipsDeleteBtn = this._createChipsDeleteBtn();
-
-    chips.setAttribute('data-val', item.dataset.val);
-    chips.classList.add(this._options.chipsClass);
-
-    chipsText.textContent = item.textContent;
-    chipsText.classList.add(this._options.chipsTextClass);
-
-    chipsDeleteBtn.setAttribute('data-val', item.dataset.val);
-    chipsDeleteBtn.classList.add(this._options.chipsDeleteBtnClass);
-
-    this._labelElement.style.display = 'none';
-
-    chips.append(chipsText, chipsDeleteBtn);
-
-    return chips;
-  }
-
-
-  _removeChips(val) {
-    const chips = this._fieldElement.querySelector(`[data-val="${val}"]`);
-
-    if (chips) {
-      chips.remove();
-    }
-
-    if (!this._fieldElement.querySelector(`.${this._options.chipsClass}`)) {
-      this._labelElement.style.display = 'inline';
-    }
-  }
-
+  
 
   //Multi
   _createDropdownBlock() {
     // Создание обертки для кастомного селекта
     this._customSelectElement = this._createWrap();
-
-    //Заголовок выпадающего списка
-    this._headingElement = this._createHeading();
 
     // Кнопка закрытия выпадающего списка
     this._closeBtnElement = this._createCloseBtn();
@@ -319,7 +239,6 @@ export default class CustomMultiselect {
 
     // Создание подписи поля
     this._labelElement = this._createLabel();
-
     if (this._options.firstOptionIsTitle) {
       this._labelElement.textContent = this._selectElement
         .querySelector('option').textContent;
@@ -361,7 +280,6 @@ export default class CustomMultiselect {
 
 
     this._optionsListContainerElement.append(
-      this._headingElement,
       this._closeBtnElement,
       this._optionsListElement,
       this._selectBtnElement,
@@ -423,21 +341,11 @@ export default class CustomMultiselect {
 
   //Multi
   _handleItemClick(evt) {
-    // Если элемент списка иммеет класс выбранного (отмеченного) элемента
-    if (evt.target.classList.contains(this._options.optionSelectedClass)) {
-      this._removeChips(evt.target.dataset.val);
-    } else {
-      this._fieldElement.append(this._createChips(evt.target));
-    }
-
     // Переключение класса "выбранного" (отмеченного) элемента
     this._toggleSelectedOption(evt.target);
 
     // Изменение выбранных элементов в стандартном select
     this._changeOption(evt.target);
-
-    // Очистка поля ввода текста
-    this._searchInputElement.value = '';
   }
 
 
@@ -509,9 +417,6 @@ export default class CustomMultiselect {
       const chips = this._fieldElement
         .querySelector(`[data-val="${option.dataset.val}"]`);
 
-      if (!chips) {
-        this._fieldElement.append(this._createChips(option));
-      }
       this._setSelectedOption(option);
       this._changeOption(option);
     })
@@ -524,23 +429,9 @@ export default class CustomMultiselect {
     const options = container.querySelectorAll(`.${this._options.optionSelectedClass}`);
 
     options.forEach((option) => {
-      this._removeChips(option.dataset.val);
       this._resetSelectedOption(option);
       this._changeOption(option);
     })
-  }
-
-
-  _handleChipsClick(evt) {
-    const val = evt.target.dataset.val;
-
-    const option = document.querySelector(
-      `.${this._options.optionClass}[data-val="${val}"]`
-    );
-
-    this._changeOption(option);
-    this._toggleSelectedOption(option);
-    this._removeChips(val);
   }
 
 
@@ -675,7 +566,6 @@ export default class CustomMultiselect {
       .add(this._options.optionsOpenedListContainerClass);
   }
 
-
   setEventListeners() {
     // Обработка текстового поиска по списку
     if (this._options.useTextSearch) {
@@ -697,22 +587,18 @@ export default class CustomMultiselect {
 
     // Обработка клика по контейнеру выпадающего списка
     this._customSelectElement.addEventListener('mousedown', (evt) => {
-      // Если клик был совершен по кнопке удаления "чипса"
-      if (evt.target.classList.contains(this._options.chipsDeleteBtnClass)) {
-        this._handleChipsClick(evt);
-      }
 
       // Если клик по ссылке "Выбрать все"
       if (evt.target.classList.contains(this._options.selectAllGroupLinkClass)) {
-        this._handleSelectGroup(evt);
+        this._handleSelectGroup(evt);        
       }
 
 
       // Если клик по ссылке "Сбросить"
       if (evt.target.classList.contains(this._options.resetAllGroupLinkClass)) {
         this._handleResetGroup(evt);
+        labelElem.textContent = ("Выбрано видов деятельности: 0 из 13");
       }
-
 
       // Если клик был совершен по пункту выпадающего списка
       if (evt.target.classList.contains(this._options.optionClass)) {
@@ -722,6 +608,13 @@ export default class CustomMultiselect {
         if (evt.target.dataset.isSelectable === 'true') {
           // Обработка клика по элементу
           this._handleItemClick(evt);
+
+          const select = document.querySelector('#activities')
+          let selected = Array.from(select.options).filter(option => option.selected).map(option => option.value);
+          const selectedCheckboxs = selected.length
+          const labelElem = document.querySelector('.custom-select__label');
+          labelElem.textContent = ("Выбрано видов деятельности: " + selectedCheckboxs + " из 13");
+       
 
           // Если используется текстовый поиск по списку
           if (this._options.useTextSearch) {
