@@ -167,18 +167,16 @@ module.exports = {
             template: './src/lk-nko-document-and-file.html',
             inject: 'body'
         }),
-      /*  new HtmlWebpackPlugin({
-<<<<<<< HEAD
->>>>>>> 790fb9d982a8d490f6851f2a4c6cb0b064a196b0
-            filename: 'donate.html',
-            template: './src/donate.html',
+        new HtmlWebpackPlugin({
+            filename: "registration-links.html",
+            template: "./src/registration-links.html",
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
-            filename: 'registration-nko-account.html',
-            template: './src/registration-nko-account.html',
+            filename: "donate.html",
+            template: "./src/donate.html",
             inject: 'body'
-        }),*/
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
