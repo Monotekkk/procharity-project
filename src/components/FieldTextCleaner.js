@@ -8,7 +8,6 @@ export default class FieldTextCleaner {
     this._fieldElement = this._containerElement
       .querySelector(`.${this._containerElement.getAttribute('class')}__field`);
 
-    this._clearInput = this._clearInput.bind(this);
   }
 
 
@@ -23,7 +22,9 @@ export default class FieldTextCleaner {
 
   setEventListeners() {
     if (this._btnElement) {
-      this._btnElement.addEventListener('mousedown', this._clearInput);
+      this._btnElement.addEventListener('mousedown', (evt) => {
+        this._clearInput(evt)
+      });
     }
   }
 }
