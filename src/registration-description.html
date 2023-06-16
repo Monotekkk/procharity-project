@@ -109,7 +109,8 @@
     </section>
     <section class="content">
       <h1 class="heading heading_type_title">Описание</h1>
-      <form>
+     
+      <form name="motivationsForm" id="motivationsForm" action="lk-portfolio.html" method="get">
         <fieldset class="fieldset" style="padding-bottom: 20px;">
           <div class="input">
             <select name="activities" id="activities" class="custom-select" multiple>
@@ -157,21 +158,17 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="fieldset" style="padding: 0;">
-          <div>
-            <p class="paragraph paragraph_activity">Поскольку организация еще не предоставляла годовую финансовую
-              отчетность,
-              хотим узнать о вашей НКО подробнее:</p>
-            <ul class="paragraph">
-              <li>как строится работа,</li>
-              <li>чем занималась организация до официального оформления,</li>
-              <li>для чего вам необходима регистрация на ProСharity,</li>
-              <li>какие задания вы планируете давать волонтерам.</li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="fieldset" style="padding: 0;">
-          <div class="textarea textarea-margin_nko">
+        <fieldset class="fieldset fieldset_template_grid-one-col">
+          <p class="paragraph">Поскольку организация еще не предоставляла годовую финансовую
+            отчетность,
+            хотим узнать о вашей НКО подробнее:</p>
+          <ul class="list list_nko">
+            <li class="list__item">как строится работа,</li>
+            <li class="list__item">чем занималась организация до официального оформления,</li>
+            <li class="list__item">для чего вам необходима регистрация на ProСharity,</li>
+            <li class="list__item">какие задания вы планируете давать волонтерам.</li>
+          </ul>
+          <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="textarea" id="textarea" maxlength="2000"
               style="height: 192px;" required></textarea>
             <label class="textarea__label" for="textarea">Подробнее об НКО</label>
@@ -181,6 +178,30 @@
             </div>
           </div>
         </fieldset>
+       <!--  <fieldset class="fieldset" style="padding: 0;">
+          <div>
+            <p class="paragraph paragraph_activity">Поскольку организация еще не предоставляла годовую финансовую
+              отчетность,
+              хотим узнать о вашей НКО подробнее:</p>
+            <ul class="list">
+              <li class="list__item">как строится работа,</li>
+              <li class="list__item">чем занималась организация до официального оформления,</li>
+              <li class="list__item">для чего вам необходима регистрация на ProСharity,</li>
+              <li class="list__item">какие задания вы планируете давать волонтерам.</li>
+            </ul>
+          </div>
+        </fieldset> -->
+    <!--     <fieldset class="fieldset" style="padding: 0;">
+          <div class="textarea textarea-margin_nko">
+            <textarea class="textarea__field textarea__field_autosize" name="textarea" id="textarea" maxlength="2000"
+              style="height: 192px;" required></textarea>
+            <label class="textarea__label" for="textarea">Подробнее об НКО</label>
+            <button class="btn textarea__btn textarea__btn_type_clear-text"></button>
+            <div class="textarea__counter">
+              <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
+            </div>
+          </div>
+        </fieldset> -->
         <button class="btn btn_style_primary" type="submit">Сохранить</button>
       </form>
     </section>
