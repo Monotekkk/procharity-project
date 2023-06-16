@@ -1,3 +1,4 @@
+import {handleTextareaAutosize} from "./textarea-autosize";
 export default class FieldTextCleaner {
   constructor(fieldContainerElement) {
     this._containerElement = fieldContainerElement;
@@ -17,6 +18,7 @@ export default class FieldTextCleaner {
     if (this._fieldElement) {
       this._fieldElement.value = '';
     }
+    handleTextareaAutosize(this._fieldElement);
   }
 
 
