@@ -12,8 +12,10 @@ import MobileMenu from "./components/MobileMenu";
 
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
-import Popup from "./components/Popup";
+import ActivityMultiselect from "./components/ActivityMultiselect";
+import Popup from './components/Popup';
 import { enableValidation } from "./components/validation";
+
 
 // Подключение сторонних библиотек
 import "cropperjs";
@@ -117,7 +119,12 @@ companyNameCustomField.generate();
 
 // Инициализация кастомного дыухуровнего выпадающего списка для поля
 // "Выбор компетенций"
-new CustomMultiselect("#competencies").generate();
+new CustomMultiselect('#competencies').generate();
+
+// Инициализация кастомного выпадающего списка для поля
+// "Виды деятельности компетенций"
+new ActivityMultiselect('#activities').generate();
+
 
 // Подключение класса сброса значений полей формы
 if (inputs && inputs.length > 0) {
@@ -135,11 +142,12 @@ if (pwdInputs && pwdInputs.length > 0) {
 
 // Управление показом / скрытием меню в мобильной версии
 new MobileMenu({
-    menuBtnClass: "menu-icon",
-    menuBtnActiveClass: "menu-icon_active",
-    menuContainerClass: "header__nav",
-    menuContainerOpenedClass: "header__nav_opened",
+  menuBtnClass: 'menu-icon',
+  menuBtnActiveClass: 'menu-icon_active',
+  menuContainerClass: 'header__nav',
+  menuContainerOpenedClass: 'header__nav_opened'
 }).setEventListeners();
+
 
 // Валидация форм
 enableValidation({

@@ -168,6 +168,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'settings-notifications.html',
+            template: './src/settings-notifications.html',
+          inject: 'body'
+          }),
+        new HtmlWebpackPlugin({
             filename: "registration-links.html",
             template: "./src/registration-links.html",
             inject: 'body'
@@ -175,6 +180,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "donate.html",
             template: "./src/donate.html",
+            inject: 'body'
+        }),        
+        new HtmlWebpackPlugin({
+            filename: 'registration-description.html',
+            template: './src/registration-description.html', 
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
