@@ -1,0 +1,9 @@
+.textarea__field_style_h-big {
+  min-height: 112px;
+}
+
+@media screen and (max-width: 900px) {
+  .textarea__field_style_h-big {
+    min-height: 172px;
+  }
+}

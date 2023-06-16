@@ -1,0 +1,11 @@
+.sidebar-nav__step_type_current-half {
+  background-color: #E6560A;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-nav__step_type_current-half {
+    background: linear-gradient(to right, #E6560A 50%, #F1F5F9 50%);
+    color: #FFFFFF;
+  }
+}
