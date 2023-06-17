@@ -1,0 +1,12 @@
+.sidebar__info {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 16px;
+  }
+}
