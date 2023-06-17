@@ -1,4 +1,5 @@
 import {handleTextareaAutosize} from "./textarea-autosize";
+import {handleTextareaSymbolCounter} from './textarea-symbol-counter';
 export default class FieldTextCleaner {
   constructor(fieldContainerElement) {
     this._containerElement = fieldContainerElement;
@@ -19,6 +20,7 @@ export default class FieldTextCleaner {
       this._fieldElement.value = '';
     }
     handleTextareaAutosize(this._fieldElement);
+    handleTextareaSymbolCounter();
   }
 
 
