@@ -192,6 +192,11 @@ module.exports = {
             template: "./src/account-links.html",
             inject: 'body',
         }),
+        new HtmlWebpackPlugin({
+            filename: "lk-descriptions.html",
+            template: "./src/lk-descriptions.html",
+            inject: 'body',
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
