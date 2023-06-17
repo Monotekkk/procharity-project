@@ -114,21 +114,6 @@ module.exports = {
             filename: 'settings-profile.html',
             template: './src/settings-profile.html',
             inject: 'body'
-        }),        
-        new HtmlWebpackPlugin({
-            filename: 'profile-description.html',
-            template: './src/profile-description.html', 
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'lk-description.html',
-            template: './src/lk-description.html', 
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'registration-description.html',
-            template: './src/registration-description.html', 
-            inject: 'body'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()

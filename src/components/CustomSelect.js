@@ -35,6 +35,7 @@ export default class CustomSelect {
     this._options = options;
   }
 
+
   _changeOption(option) {
     if (this._selectElement.multiple) {
       const element = this._selectElement.querySelector(`[value="${option.dataset.val}"]`);
@@ -44,6 +45,7 @@ export default class CustomSelect {
       this._selectElement.value = option.dataset.val;
     }
   }
+
 
   _createWrap() {
     // Создание обертки для кастомного селекта
@@ -105,6 +107,7 @@ export default class CustomSelect {
 
     return element;
   }
+
 
   //Select
   _createDropdownBlock() {
@@ -182,7 +185,7 @@ export default class CustomSelect {
 
       return resultArray;
     }
-     
+
     const optgroups = this._selectElement.querySelectorAll('optgroup');
     const options = this._selectElement.querySelectorAll('option');
 

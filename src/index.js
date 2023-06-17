@@ -13,8 +13,8 @@ import MobileMenu from "./components/MobileMenu";
 
 import CustomSelect from "./components/CustomSelect";
 import CustomMultiselect from "./components/CustomMultiselect";
-import ActivityMultiselect from "./components/ActivityMultiselect";
 import Popup from './components/Popup';
+
 
 // Подключение сторонних библиотек
 import 'cropperjs';
@@ -124,10 +124,6 @@ companyNameCustomField.generate();
 // "Выбор компетенций"
 new CustomMultiselect('#competencies').generate();
 
-// Инициализация кастомного выпадающего списка для поля
-// "Виды деятельности компетенций"
-new ActivityMultiselect('#activities').generate();
-
 
 // Подключение класса сброса значений полей формы
 if (inputs && inputs.length > 0) {
@@ -135,6 +131,7 @@ if (inputs && inputs.length > 0) {
     new FieldTextCleaner(input).setEventListeners();
   })
 }
+
 
 // Подключение класса для показа/скрытия пароля
 if (pwdInputs && pwdInputs.length > 0) {

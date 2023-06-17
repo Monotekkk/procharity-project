@@ -1,9 +1,0 @@
-.main_template_lk-description {
-  min-height: 844px;
-}
-
-@media screen and (max-width: 900px) {
-  .main_template_lk-description {
-    min-height: 1060px;
-  }
-}

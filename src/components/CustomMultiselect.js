@@ -139,7 +139,7 @@ export default class CustomMultiselect {
     element.textContent = 'Выбрать';
 
     return element;
-  }  
+  }
 
 
   _createListContainer() {
@@ -594,8 +594,8 @@ export default class CustomMultiselect {
       parentElement.append(option);
     });
   }
-  
-  
+
+
   _toggleSelectedOption(option) {
     // Стилизация выбранного элемента списка
     option.classList.toggle(this._options.optionSelectedClass);
@@ -720,6 +720,7 @@ export default class CustomMultiselect {
         // присутствовать элементы optgroup, не имеющие вложенных элементов option
         // В этом случае клик по пункту никак обработан не будет
         if (evt.target.dataset.isSelectable === 'true') {
+          console.log(987)
           // Обработка клика по элементу
           this._handleItemClick(evt);
 
