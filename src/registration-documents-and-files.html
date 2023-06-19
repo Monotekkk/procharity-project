@@ -106,7 +106,7 @@
     <h1 class="heading heading_type_title">Документы и файлы</h1>
     <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="get">
       <!-- В комментариях ниже форма добавление нового логотипа. -->
-      <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_style_pb-documents-reg fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Логотип</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png" class="uploader__input" type="file" name="projects" id="certificates"
@@ -115,11 +115,9 @@
             <span class="uploader__text-accent">Выбери файл</span><span class="uploader__text"> или перетащи его сюда</span>
           </label>
         </div>
-        <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
+        <p class="note uploader__note">Jpg, png объемом не более 5 Мб</p>
       </fieldset>
-    </form>
-    <form id="uploadProjects" name="uploadProjects" enctype="multipart/form-data" class="uploader" method="get">
-      <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_style_pb-documents-reg fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Свидетельства о регистрации</legend>
         <div class="uploader__input-container">
           <input accept=".jpg, .png, .pdf" class="uploader__input" type="file" name="projects" id="projects" multiple>
@@ -127,11 +125,9 @@
             <span class="uploader__text-accent">Выбери файл</span><span class="uploader__text"> или перетащи его сюда</span>
           </label>
         </div>
-        <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб</p>
+        <p class="note uploader__note">Jpg, png, pdf объемом не более 20 Мб каждый</p>
       </fieldset>
-    </form>
-    <form id="uploadCertificates" name="uploadCertificates" enctype="multipart/form-data" class="uploader" method="get">
-      <fieldset class="fieldset fieldset_style_pb-small fieldset_template_grid-one-col">
+      <fieldset class="fieldset fieldset_style_pb-documents-reg fieldset_template_grid-one-col">
         <legend class="heading heading_type_subtitle">Устав с печатью</legend>
         <div class="uploader__input-container">
           <input accept=".doc, .pdf" class="uploader__input" type="file" name="projects" id="certificates"
@@ -140,10 +136,8 @@
             <span class="uploader__text-accent">Выбери файл</span><span class="uploader__text"> или перетащи его сюда</span>
           </label>
         </div>
-        <p class="note uploader__note">Doc, pdf объемом не более 20 Мб</p>
+        <p class="note uploader__note">Doc, pdf объемом не более 20 Мб каждый</p>
       </fieldset>
-    </form>
-    <form name="projectLinksForm" id="projectLinksForm" action="lk-social.html" method="get">
       <button type="submit" class="btn btn_style_primary">Сохранить</button>
     </form>
   </section>
