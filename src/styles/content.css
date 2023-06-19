@@ -389,6 +389,7 @@
 
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
+@import url(../blocks/sidebar-nav/__item-text/_type/sidebar-nav__item-text_type_missed.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-pb-small.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-pb-mobile.css);
 @import url(../blocks/btn/_style/btn_style_mt-small.css);
