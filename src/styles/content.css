@@ -314,7 +314,7 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
-
+@import url(./../blocks/paragraph/_style/paragraph_style_span.css);
 @import url(./../blocks/paragraph/_pb20/paragraph_pb20.css);
 
 @import url(../blocks/list/list.css);
