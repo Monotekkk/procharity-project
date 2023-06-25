@@ -1,32 +1,38 @@
 .input {
-  box-sizing: border-box;
-  height: 48px;
-  position: relative;
-  width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    position: relative;
+    width: 100%;
+}
+
+#newWorker .input,
+#editWorker .input,
+#doubleTIN .input {
+    margin-bottom: 20px;
 }
 
 .input-group .input {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .input-group .input:first-of-type {
-  border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
 }
 
 .input-group .input:last-of-type {
-  border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .input-group .input {
-    border-radius: 0;
-  }
+    .input-group .input {
+        border-radius: 0;
+    }
 
-  .input-group .input:first-of-type {
-    border-radius: 6px 6px 0 0;
-  }
+    .input-group .input:first-of-type {
+        border-radius: 6px 6px 0 0;
+    }
 
-  .input-group .input:last-of-type {
-    border-radius: 0 0 6px 6px;
-  }
+    .input-group .input:last-of-type {
+        border-radius: 0 0 6px 6px;
+    }
 }

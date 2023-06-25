@@ -1,8 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 
-
-
 @import url(../blocks/main/main.css);
 
 @import url(../blocks/main/_template/main_template_lk.css);
@@ -11,8 +9,6 @@
 @import url(../blocks/main/_template/main_template_registration-form.css);
 @import url(../blocks/main/_template/main_template_first-step.css);
 
-
-
 @import url(./../blocks/breadcrumbs/breadcrumbs.css);
 
 @import url(./../blocks/breadcrumbs/__list/breadcrumbs__list.css);
@@ -20,8 +16,6 @@
 @import url(./../blocks/breadcrumbs/__item/breadcrumbs__item.css);
 
 @import url(./../blocks/breadcrumbs/__link/breadcrumbs__link.css);
-
-
 
 @import url(../blocks/sidebar/sidebar.css);
 
@@ -37,16 +31,11 @@
 
 @import url(../blocks/sidebar/__link/sidebar__link.css);
 
-
-
-
 @import url(../blocks/progress-bar/progress-bar.css);
 
 @import url(../blocks/progress-bar/__bg/progress-bar__bg.css);
 
 @import url(../blocks/progress-bar/__scale/progress-bar__scale.css);
-
-
 
 @import url(../blocks/btn/btn.css);
 
@@ -54,14 +43,13 @@
 @import url(../blocks/btn/_type/btn_type_refresh-process.css);
 @import url(../blocks/btn/_type/btn_type_close.css);
 
-
-
 @import url(../blocks/sidebar-nav/sidebar-nav.css);
 
 @import url(../blocks/sidebar-nav/__list/sidebar-nav__list.css);
 
 @import url(../blocks/sidebar-nav/__item/sidebar-nav__item.css);
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_current.css);
+
 @import url(../blocks/sidebar-nav/__item/_type/sidebar-nav__item_type_mobile-hidden.css);
 
 @import url(../blocks/sidebar-nav/__link/sidebar-nav__link.css);
@@ -69,8 +57,12 @@
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
 @import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_lk.css);
+@import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_reg.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current-half.css);
 
+
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_half.css);
 
 @import url(../blocks/sidebar-nav/__step-text/sidebar-nav__step-text.css);
 
@@ -79,16 +71,13 @@
 @import url(../blocks/sidebar-nav/__description/sidebar-nav__description.css);
 
 @import url(../blocks/sidebar-nav/__description-title/sidebar-nav__description-title.css);
+@import url(../blocks/sidebar-nav/__description-step/sidebar-nav__description-step.css);
 
 @import url(../blocks/sidebar-nav/__description-steps/sidebar-nav__description-steps.css);
-
-
 
 @import url(../blocks/content/content.css);
 
 @import url(../blocks/content/_template/content_template_grid-registration.css);
-
-
 
 @import url(../blocks/popup/popup.css);
 
@@ -100,6 +89,7 @@
 @import url(../blocks/popup/__paragraph/popup__paragraph.css);
 
 @import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__title/_type/popup__title_type_error.css);
 
 @import url(../blocks/popup/__text/popup__text.css);
 
@@ -111,8 +101,6 @@
 
 @import url(../blocks/popup/_opened/popup_opened.css);
 
-
-
 /* Заголовки */
 
 @import url(../blocks/heading/heading.css);
@@ -122,9 +110,7 @@
 @import url(../blocks/heading/_type/heading_type_registrtion.css);
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
-
-
-
+@import url(../blocks/heading/_type/heading_type_account.css);
 /* Кнопки */
 
 @import url(../blocks/btn/btn.css);
@@ -133,6 +119,7 @@
 @import url(../blocks/btn/_style/btn_style_secondary.css);
 @import url(../blocks/btn/_style/btn_style_inactive.css);
 @import url(../blocks/btn/_style/btn_style_telegram.css);
+@import url(../blocks/btn/_style/btn_style_table-heading.css);
 
 @import url(../blocks/btn/_type/btn_type_close.css);
 @import url(../blocks/btn/_type/btn_type_refresh.css);
@@ -140,8 +127,6 @@
 @import url(../blocks/btn/_type/btn_type_add.css);
 
 @import url(../blocks/btn/_position/btn_position_right.css);
-
-
 
 /* Пользовательское отображение select */
 
@@ -189,8 +174,6 @@
 @import url(../blocks/custom-select/__btn/custom-select__btn.css);
 @import url(../blocks/custom-select/__btn/_type/custom-select__btn_type_reset.css);
 
-
-
 /* Отображение форм */
 
 @import url(../blocks/radio-switcher/radio-switcher.css);
@@ -199,16 +182,15 @@
 
 @import url(../blocks/radio-switcher/__label/radio-switcher__label.css);
 
-
-
 /* Пиктограмма (кнопка) подсказки */
 
 @import url(../blocks/hint/hint.css);
 
 @import url(../blocks/hint/__tooltip/hint__tooltip.css);
 @import url(../blocks/hint/__tooltip/_position/hint__tooltip_position_right-bottom.css);
-
-
+@import url(../blocks/hint/__tooltip/_position/hint__tooltip_position_center-bottom.css);
+@import url(../blocks/hint/__list/hint__list.css);
+@import url(../blocks/hint/__list-item/hint__list-item.css);
 
 /* fieldset */
 
@@ -217,15 +199,14 @@
 @import url(../blocks/fieldset/__row-group/fieldset__row-group.css);
 @import url(../blocks/fieldset/__row-group/_type/fieldset__row-group_type_block.css);
 
-@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
-@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
-
 @import url(../blocks/fieldset/_template/fieldset_template_grid-form.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
 
 
+@import url(../blocks/fieldset/_style/fieldset_style_pb-small.css);
+@import url(../blocks/fieldset/_style/fieldset_style_p-none.css);
 
 /* textarea */
 
@@ -241,16 +222,12 @@
 @import url(../blocks/textarea/__label/textarea__label.css);
 
 @import url(../blocks/textarea/__counter/textarea__counter.css);
-
+@import url(../blocks/textarea/__counter/_color/textarea__counter_color.css);
 @import url(../blocks/textarea/__btn/textarea__btn.css);
 @import url(../blocks/textarea/__btn/_type/textarea__btn_type_clear-text.css);
 
-
-
 /* input */
 @import url(../blocks/input-group/input-group.css);
-
-
 
 @import url(../blocks/input/input.css);
 
@@ -258,8 +235,7 @@
 @import url(../blocks/input/__field/_default/input__field_default.css);
 @import url(../blocks/input/__field/_type/input__field_type_calendar.css);
 @import url(../blocks/input/__field/_type/input__field_type_password.css);
-
-
+@import url(../blocks/input/__field/_link/input__field_link.css);
 @import url(../blocks/input/_error/input_error.css);
 /*@import url(../blocks/input/_type/input_type_bottom-interval.css);*/
 
@@ -277,8 +253,6 @@
 @import url(../blocks/input/__error-message/input__error-message.css);
 @import url(../blocks/input/__error-message/_visible/input__error-message_visible.css);
 
-
-
 /* checkbox */
 
 @import url(../blocks/checkbox/checkbox.css);
@@ -286,12 +260,10 @@
 @import url(../blocks/checkbox/__label/checkbox__label.css);
 @import url(../blocks/checkbox/__label/_style/checkbox__label_style_notifications.css);
 
-
-
 /*Отображение и изменение аватара*/
 
 @import url(../blocks/avatar/avatar.css);
-
+@import url(../blocks/avatar/_type/_account/avatar_type_account.css);
 @import url(../blocks/avatar/__container/avatar__container.css);
 
 @import url(../blocks/avatar/__input/avatar__input.css);
@@ -304,7 +276,7 @@
 @import url(../blocks/avatar/__btn-delete/_visible/avatar__btn-delete_visible.css);
 
 @import url(../blocks/avatar/__max-volume/avatar__max-volume.css);
-
+@import url(../blocks/avatar/__max-volume/_type/_account/avatar__max-volume_type_account.css);
 @import url(../blocks/avatar/__preview-container/avatar__preview-container.css);
 
 @import url(../blocks/avatar/__preview-item/avatar__preview-item.css);
@@ -314,13 +286,9 @@
 @import url(../blocks/avatar/__preview-image/_size/avatar__preview-image_size_medium.css);
 @import url(../blocks/avatar/__preview-image/_size/avatar__preview-image_size_small.css);
 
-
-
 /* Примечания */
 
 @import url(../blocks/note/note.css);
-
-
 
 /* Элементы отображения стартовой страницы */
 
@@ -338,8 +306,6 @@
 
 @import url(../blocks/registration-block/_type/registration-block_type_organization.css);
 
-
-
 /* Элементы оформления текста */
 
 @import url(../blocks/paragraph/paragraph.css);
@@ -348,18 +314,17 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
+@import url(./../blocks/paragraph/_style/paragraph_style_span.css);
+@import url(./../blocks/paragraph/_pb20/paragraph_pb20.css);
 
 @import url(../blocks/list/list.css);
+@import url(../blocks/list/_nko/list_nko.css);
 @import url(../blocks/list/__item/list__item.css);
-
-
 
 /* Ссылки */
 
 @import url(../blocks/link/link.css);
 @import url(../blocks/link/_style/link_style_dark.css);
-
-
 
 /* Элементы отображения страницы "Смена пароля */
 
@@ -377,15 +342,11 @@
 
 /*@import url(../blocks/notifications-form/__help-btn/notifications-form__help-btn.css);*/
 
-
-
 /* Блок подписки на телеграм-бот */
 
 @import url(../blocks/telegram/telegram.css);
 
 @import url(../blocks/telegram/__text/telegram__text.css);
-
-
 
 /* Загрузчик файлов */
 
@@ -415,15 +376,56 @@
 @import url(../blocks/uploader/__text-accent/uploader__text-accent.css);
 
 @import url(../blocks/uploader/__note/uploader__note.css);
+@import url(../blocks/notification/notification.css);
 
 @import url(../blocks/textarea-margin/textarea-margin.css);
 @import url(../blocks/textarea/__btn/_withHint/textarea__btn_withHint.css);
-@import url(../blocks/custom-select/__list/_activity/custom-select__item_activity.css);
-@import url(../blocks/paragraph/_activity/paragraph_acticity.css);
 @import url(../blocks/textarea-margin/_nko/textarea-margin_nko.css);
-@import url(../blocks/main/_template/main_template_lk-description.css);
-@import url(../blocks/sidebar/_mobile/sidebar_mobile.css);
-@import url(../blocks/sidebar/__info/sidebar__info.css);
-
+/* Плашка уведомления*/
+@import url(../blocks/notification/notification.css);
 /* CropperJS */
 @import url(../vendor/cropperjs.css);
+
+
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_done.css);
+@import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_missed.css);
+@import url(../blocks/sidebar-nav/__item-text/_type/sidebar-nav__item-text_type_missed.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-pb-small.css);
+@import url(../blocks/fieldset/_style/fieldset_style_pb-documents-reg.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-pb-mobile.css);
+@import url(../blocks/btn/_style/btn_style_mt-small.css);
+
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-big.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_h-small.css);
+@import url(../blocks/textarea/__field/_style/textarea__field_style_p.css);
+@import url(../blocks/btn/_style/btn_style_primary-p.css);
+
+/*----------------------------------------------------------------------*/
+/* регистрация НКО - страница финал */
+@import url(../blocks/paragraph/_style/paragraph_style_final.css);
+@import url(../blocks/heading/_type/heading_type_title-nko.css);
+@import url(../blocks/registration-nko-final/registration-nko-final.css);
+@import url(../blocks/registration-nko-final/__image/registration-nko-final__image.css);
+
+@import url(../blocks/main/_template/main_template_registration-nko-hello.css);
+
+
+/* Список приглашенных сотрудников */
+@import url(../blocks/inviting-workers/inviting-workers.css);
+@import url(../blocks/inviting-workers/__list/iviting-workers__list.css);
+@import url(../blocks/inviting-workers/__item/inviting-workers__item.css);
+@import url(../blocks/inviting-workers/__item-text/inviting-workers__item-text.css);
+@import url(../blocks/inviting-workers/__column/inviting-workers__column.css);
+@import url(../blocks/inviting-workers/__column/_w20/inviting-workers__column_w20.css);
+@import url(../blocks/inviting-workers/__btn-down-icon/inviting-workers__btn-down-icon.css);
+@import url(../blocks/inviting-workers/__context-menu-list-icon/inviting-workers__context-menu-list-icon.css);
+@import url(../blocks/inviting-workers/__list-edit-icon/inviting-workers__list-edit-icon.css);
+@import url(../blocks/inviting-workers/__rights-icon/inviting-workers__rights-icon.css);
+@import url(../blocks/inviting-workers/__sort/inviting-workers__sort.css);
+/* Pagination */
+@import url(../blocks/inviting-workers/__pagination/inviting-workers__pagination.css);
+@import url(../blocks/inviting-workers/__pagination-list/inviting-workers__pagination-list.css);
+@import url(../blocks/inviting-workers/__pagination-item/inviting-workers__pagination-item.css);
+@import url(../blocks/inviting-workers/__pagination-btn/inviting-workers__pagination-btn.css);
+@import url(../blocks/inviting-workers/__pagination-btn-icon/inviting-workers__pagination-btn-icon.css);
+

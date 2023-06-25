@@ -1,0 +1,15 @@
+.inviting-workers__pagination {
+    display: flex;
+    padding-top: 20px;
+}
+.inviting-workers__pagination:last-child {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .inviting-workers__pagination {
+        display: none;
+    }
+    .inviting-workers__pagination:last-child {
+        display: flex;
+    }
+}
