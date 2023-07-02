@@ -183,11 +183,6 @@ module.exports = {
             inject: 'body'
         }),        
         new HtmlWebpackPlugin({
-            filename: 'profile-description.html',
-            template: './src/profile-description.html', 
-            inject: 'body'
-        }),
-        new HtmlWebpackPlugin({
             filename: 'lk-description.html',
             template: './src/lk-description.html', 
             inject: 'body'
@@ -200,11 +195,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "account-links.html",
             template: "./src/account-links.html",
-            inject: 'body',
-        }),
-        new HtmlWebpackPlugin({
-            filename: "lk-descriptions.html",
-            template: "./src/lk-descriptions.html",
             inject: 'body',
         }),
         new CleanWebpackPlugin(),
