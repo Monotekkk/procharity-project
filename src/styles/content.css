@@ -110,7 +110,7 @@
 @import url(../blocks/heading/_type/heading_type_registrtion.css);
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
-
+@import url(../blocks/heading/_type/heading_type_account.css);
 /* Кнопки */
 
 @import url(../blocks/btn/btn.css);
@@ -235,7 +235,7 @@
 @import url(../blocks/input/__field/_default/input__field_default.css);
 @import url(../blocks/input/__field/_type/input__field_type_calendar.css);
 @import url(../blocks/input/__field/_type/input__field_type_password.css);
-
+@import url(../blocks/input/__field/_link/input__field_link.css);
 @import url(../blocks/input/_error/input_error.css);
 /*@import url(../blocks/input/_type/input_type_bottom-interval.css);*/
 
@@ -263,7 +263,7 @@
 /*Отображение и изменение аватара*/
 
 @import url(../blocks/avatar/avatar.css);
-
+@import url(../blocks/avatar/_type/_account/avatar_type_account.css);
 @import url(../blocks/avatar/__container/avatar__container.css);
 
 @import url(../blocks/avatar/__input/avatar__input.css);
@@ -276,7 +276,7 @@
 @import url(../blocks/avatar/__btn-delete/_visible/avatar__btn-delete_visible.css);
 
 @import url(../blocks/avatar/__max-volume/avatar__max-volume.css);
-
+@import url(../blocks/avatar/__max-volume/_type/_account/avatar__max-volume_type_account.css);
 @import url(../blocks/avatar/__preview-container/avatar__preview-container.css);
 
 @import url(../blocks/avatar/__preview-item/avatar__preview-item.css);
@@ -314,7 +314,7 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
-
+@import url(./../blocks/paragraph/_style/paragraph_style_span.css);
 @import url(./../blocks/paragraph/_pb20/paragraph_pb20.css);
 
 @import url(../blocks/list/list.css);

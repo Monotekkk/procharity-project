@@ -1,0 +1,6 @@
+@media screen and (max-width: 900px) {
+  .avatar_type_account {
+    padding: 0 0 34px;
+    gap: 32px;
+  }
+}

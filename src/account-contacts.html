@@ -106,8 +106,8 @@
     <a href="#" class="sidebar__status sidebar__status_state_process">На модерации</a>
   </section>
   <section class="content">
-    <h1 class="heading heading heading_type_title">Контактное лицо</h1>
-    <div class="avatar">
+    <h1 class="heading heading_type_account">Контактное лицо</h1>
+    <div class="avatar avatar_type_account">
       <div class="avatar__container">
         <input type="file" class="avatar__input" name="addAvatar" id="addAvatar">
         <label class="avatar__label" for="addAvatar">Добавить фотографию</label>
@@ -118,12 +118,12 @@
         <!--<img class="avatar__img" alt="Твой аватар" src="<%=require('./images/edit-photo-popup.jpg')%>">-->
       </div>
       <button class="btn btn_type_close avatar__btn-delete"></button>
-      <p class="avatar__max-volume">Jpg, png объемом не более 5 Мб</p>
+      <p class="avatar__max-volume avatar__max-volume_type_account">Jpg, png объемом не более 5 Мб</p>
       <input type="hidden" name="croppedImage" id="croppedImage" class="avatar__cropped-image-input">
     </div>
     <form name="accountContacts" id="accountContacts" action="" method="get" novalidate>
       <fieldset class="fieldset fieldset_template_grid-form fieldset_style_pb-small" id="userDate">
-        <legend class="paragraph">Волонтеры увидят эти данные на странице НКО и в ваших заданиях.
+        <legend class="paragraph">Волонтеры увидят эти данные на&nbsp;странице НКО и в ваших заданиях.
         </legend>
         <div class="input">
           <input type="text" class="input__field" name="name" id="name" placeholder="Имя" required>
@@ -149,7 +149,7 @@
       <fieldset class="fieldset fieldset_template_grid-form" id="userContacts">
         <legend class="paragraph paragraph_style_desktop">Волонтеры не увидят ваши контакты. Мы будем использовать их, если понадобится уточнить детали или рассказать об изменениях на платформе.
         </legend>
-        <legend class="paragraph paragraph_style_mobile">Волонтеры не увидят ваши контакты. Мы будем использовать их, если понадобится уточнить детали или рассказать об изменениях на платформе.</legend>
+        <legend class="paragraph paragraph_style_mobile">Волонтеры не увидят ваши контакты. Мы&nbsp;будем использовать их, если&nbsp;понадобится уточнить детали или&nbsp;рассказать об изменениях на&nbsp;платформе.</legend>
         <div class="input">
           <input type="email" class="input__field" name="email" id="email" placeholder="Электронная почта" required>
           <label for="email" class="input__label">Электронная почта</label>
